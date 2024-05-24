@@ -15,8 +15,10 @@ body {
 #main-container {
     display: flex;
     width: 100vw;
+    max-width: 1500px;
     height: 100vh;
     align-items: center;
+    margin: 0 auto;
 }
 #aside {
     display: flex;
@@ -26,33 +28,65 @@ body {
 #plants {
     object-fit: cover;
 }
-#signup-container {
+#right-container {
     display: flex;
     flex-direction: column;
     width: 70%;
+    justify-content: center;
 }
 #quote {
     font-size: 24px;
     font-weight: bold;
     max-inline-size: 66ch;
 }
-#quote, #form-container, #account {
-    padding: 16px;
+#quote, #white-area {
+    padding: 16px 16px 16px 64px;
 }
-#form-background {
+#white-area {
     background-color: white;
-    padding: 16px;
     box-shadow: 3px 3px 10px 1px gray;
 }
 #form {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 32px;
+    max-width: 650px;
+    justify-content: space-between;
 }
 form, label, h2 {
     background-color: transparent;
 }
-#submit, #form-background p {
+h2 {
+    margin-bottom: 16px;
+}
+#submit, p {
     position: absolute;
     top: 90%;
+}
+label {
+    display: block;
+    color: #464646;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 14px;
+}
+#submit-btn {
+    position: absolute;
+    top: 85%;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(78, 98, 53);
+    color: white;
+    padding: 5px 4px 8px 4px;
+}
+input {
+    width: 250px;
+}
+p, button {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: rgb(78, 98, 53);
 }
