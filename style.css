@@ -24,6 +24,8 @@ body {
     display: flex;
     height: 100%;
     width: 30%;
+    position: relative;
+    justify-content: center;
 }
 #plants {
     object-fit: cover;
@@ -44,9 +46,10 @@ body {
 }
 #white-area {
     background-color: white;
-    box-shadow: 3px 3px 10px 1px gray;
+    box-shadow: 3px 3px 5px -2px gray;
 }
 #form {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -56,12 +59,11 @@ body {
 form, label, h2 {
     background-color: transparent;
 }
+input {
+    width: 250px;
+}
 h2 {
     margin-bottom: 16px;
-}
-#submit, p {
-    position: absolute;
-    top: 90%;
 }
 label {
     display: block;
@@ -72,7 +74,7 @@ label {
 }
 #submit-btn {
     position: absolute;
-    top: 85%;
+    top: 249px;
     width: 200px;
     border: none;
     border-radius: 4px;
@@ -80,13 +82,38 @@ label {
     color: white;
     padding: 5px 4px 8px 4px;
 }
-input {
-    width: 250px;
+p {
+    position: absolute;
+    top: 302px;
 }
 p, button {
     font-weight: 600;
 }
-a {
+form a {
     text-decoration: none;
     color: rgb(78, 98, 53);
+}
+#logo-shade {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 150px;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+#logo-text {
+    font-family: "norsebold";
+    align-self: center;
+    color: white;
+    font-size: 100px;
+}
+#credit {
+    position: absolute;
+    bottom: 16px;
+    color: white;
+}
+#credit a {
+    color: white;
 }
