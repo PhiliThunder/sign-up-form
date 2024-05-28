@@ -19,6 +19,7 @@ body {
     height: 100vh;
     align-items: center;
     margin: 0 auto;
+    justify-content: center;
 }
 #aside {
     display: flex;
@@ -116,4 +117,22 @@ form a {
 }
 #credit a {
     color: white;
+}
+input {
+    border: 1px solid grey;
+}
+.label-input-blocks input {
+    border-radius: 3px;
+    outline: none;
+}
+.label-input-blocks input:focus {
+    border-color: blue;
+    border-width: 2px;
+    box-shadow: 3px 3px 5px -2px grey;
+}
+.label-input-blocks input:invalid:focus {
+    border-color: red;
+}
+#content-wrapper { /*Accounts for the absolutely positioned elements to accurately center the right side vertically*/
+    padding: 0 0 115px 0;
 }
